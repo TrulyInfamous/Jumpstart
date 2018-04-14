@@ -1,3 +1,5 @@
+/* Universal Styling */
+
 html {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -6,6 +8,49 @@ html {
 .monoton {
   font-family: "Monoton", cursive;
 }
+
+.grey {
+  color: grey;
+}
+
+.blue {
+  color: #399bd1;
+}
+
+.btn {
+  padding: 1.3rem 0;
+  width: 11.4rem;
+  background-color: #399bd1;
+  border: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn:active {
+  background-color: #399bd1;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  opacity: 0.6;
+  transition: all 400ms ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.3, 1.3);
+  opacity: 1.0;
+}
+
+/* Navbar Styling */
 
 .navbar-nav {
   font-size: 1.3rem;
@@ -24,22 +69,14 @@ html {
   color: #399bd1;
 }
 
-.grey {
-  color: grey;
-}
-
-.blue {
-  color: #399bd1;
-}
-
 .grey:hover {
   color: rgb(22, 22, 22);
 }
 
-.jumbotron {
-  margin-top: 55px;
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+/* Jumbotron Styling */
+
+#Jumbotron .jumbotron {
+  height: 760px;
 }
 
 .jumbotron-bike {
@@ -48,20 +85,62 @@ html {
   background-position: center;
 }
 
+.jumbotron-beer {
+  background-image: url("../jumpstart_resources/images/jumbotron-beer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-flowers {
+  background-image: url("../jumpstart_resources/images/jumbotron-flowers.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron-duffel {
+  background-image: url("../jumpstart_resources/images/jumbotron-duffel.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .content {
   margin-top: 11.85rem;
   margin-bottom: 11.85rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: white;
 }
 
 .content h1 {
   font-size: 7.1rem;
 }
 
+@media only screen and (max-width: 992px) {
+  .content h1 {
+    font-size: 5.7rem;
+  }
+}
+
 .content p {
   font-size: 1.8rem;
-  width: 51.3rem;
+  max-width: 51.3rem;
   text-align: center;
 }
+
+#Jumbotron .btn {
+  padding: 1.3rem 0;
+  width: 11.4rem;
+  background-color: #399bd1;
+  border: none;
+  color: white;
+  left: 0;
+  right: 0;
+  margin-top: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+
+/* Featured-Project Styling */
 
 #Featured-Project h2 {
   font-size: 1.7rem;
@@ -80,4 +159,38 @@ html {
 #Featured-Project p {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.7);
+}
+
+/* Projects Styling */
+
+#Projects .gap {
+  margin-bottom: 5.85rem;
+}
+
+#Projects .row {
+  margin-bottom: 0;
+}
+
+#Projects h3 {
+  font-size: 1.6rem;
+  margin-top: 0.8rem;
+}
+
+/* Footer Styling */
+
+footer h1 {
+  margin-bottom: 1.4rem;
+}
+
+footer .btn{
+  margin-top: 2rem;
+}
+
+footer p {
+  max-width: 42rem;
+}
+
+footer .jumbotron {
+  margin-bottom: 0;
+  margin-top: 0;
 }
